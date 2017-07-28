@@ -7,7 +7,7 @@ public class Exercice4 {
 		
 		int [] array= new int[10];
 		Scanner sc= new Scanner (System.in);
-		int valeur =0;
+		int valeur =0, filling =0;
 		
 		System.out.println("Menu : \n 1- Ajouter un nombre\n 2- Afficher les nombres\n 0- quitter");
 		System.out.println("Menu : Quel est votre choix");
@@ -30,6 +30,11 @@ public class Exercice4 {
 			case 1 :{
 				System.out.println("quel est le nombre à ajouter ?");
 				int nombre= sc.nextInt();
+				filling ++;
+				if (filling > array.length){
+				// allonger le tableau + modifier filling pour le remplissage	
+				} else {array[filling] = nombre;
+				}
 				System.out.println(nombre + "\t");
 			}
 				break;
@@ -43,7 +48,9 @@ public class Exercice4 {
 				System.out.println("Au revoir !");
 			}	
 			}
-			
+			System.out.println("Menu : \n 1- Ajouter un nombre\n 2- Afficher les nombres\n 0- quitter");
+			System.out.println("Menu : Quel est votre choix");
+			valeur= sc.nextInt();
 		}
 	sc.close();		
 	}
