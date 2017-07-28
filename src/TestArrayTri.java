@@ -24,7 +24,7 @@ public class TestArrayTri {
 		}
 		
 		//affichage du tableau trié
-		System.out.println("\nLe tableau trié : ");
+		System.out.println("\nLe tableau trié est le suivant: ");
 		for (int i=0; i<array.length; i++){ 
 			System.out.print(array[i] + "\t");
 		}
